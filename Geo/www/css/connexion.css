@@ -31,9 +31,10 @@ body {
 #card {
   display: flex;
   flex-direction: column;
-  
+  justify-content: space-between;
   width: 70%;
   height: 90%;
+  margin: 2px;
   background: rgba(255, 255, 255, 0.42);
 
   border-radius: 16px;
