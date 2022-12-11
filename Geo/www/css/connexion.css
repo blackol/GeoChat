@@ -28,6 +28,13 @@ body {
   align-items: center;
 }
 
+#pseudo::placeholder {
+    color: white;
+}
+
+#mdps::placeholder {
+    color: white;
+}
 #card {
   display: flex;
   flex-direction: column;
@@ -47,7 +54,7 @@ body {
 	width: 300px;
     height: 50px;
     border-radius: 15px;
-    background-color: blue;
+    background-color: rgb(30, 73, 167);
     color: white;
     font-size: xx-large;
 }
