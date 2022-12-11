@@ -4,33 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Inscription.css" />
     <title>Inscription</title>
 </head>
 <body>
-    <div id="connexionbody">
-        <div id="Logo">
-              <img src="../www/img/LOGO.jpeg" alt="logo" width="300px"  >
-        </div>
-  
-        <div id="Zoneactive">
-          <div id="card">
-  
-              <div></div>
-              <div>
-                  <button disabled="disabled" class="btn">
-                      Pseudo
-                  </button>
-              </div>
-  
-              <div>
-                  <button disabled="disabled" class="btn">
-                      Mot de passe
-                  </button>
-              </div>
-              
-  
-          </div>
+    <div  class="text-align" id="inscriptionbody">
+    <div>
+      <div id="Logo">
+            <img src="../www/img/logo.svg" alt="logo" width="300px"  >
+      </div>
+
+      <div class="form-group">
+        <label for="photo"><b>Photo</b></label>
+        <button type="button" class="btn btn-warning" id="btnloadpicInscription" onclick="loadpicInscription()"><svg xmlns="../www/img/upload.svg" width="16" height="16" >
+          
+        </svg></button> 
+      </div>
+      
+    </div> 
+
+    <div id="Zoneactive">
+        <div id="card">
+            
+            <form role="form" id="formlog">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="nom" placeholder="Nom">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="prenom" placeholder="Prénom">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="pseudo" placeholder="Pseudo">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="birthdate" placeholder="Date de naissance">
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="sexe" id="femme">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Femme
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="sexe" id="homme" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Homme
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" id="password" placeholder="Mot de passe">
+                </div>
+                <button onclick='valide()' type="button" class="btn btn-success" id="btnvalide">Valider</button> <br>
+                  
+              </form>
         </div>
       </div>
+    </div>
 </body>
 </html>
