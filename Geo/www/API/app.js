@@ -76,7 +76,7 @@ app.get('/', (req, res) => {
 
 // Connexion a la base de donnee
 
-mongoose.connect("mongodb+srv://Administrateur:domenicmongodb@clusterspnproject.lyaq2.mongodb.net/DomenicTest?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true }, () => /* current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.*/
+mongoose.connect( /* current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.*/
     console.log('connecter a la base de donnees !')
 );
 
