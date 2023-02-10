@@ -70,18 +70,11 @@ body {
   align-items: center;
 }
 
-.btnvalider {
-  width: 20vh;
-  height: 4.8vh;
+.btnacceuil {
+  width: 24vh;
+  height: 6.8vh;
   border-radius: 15px;
   background-color: blue;
   color: white;
   font-size: xx-large;
-}
-
-#messageinscrit {
-  font-size: large;
-  color: black;
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 0px;
 }
