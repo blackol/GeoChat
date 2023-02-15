@@ -39,7 +39,7 @@ const app = express();
 var https = require('https');
 var http = require('http');
 //---------
-const mongoose = require('mongoose'); //importer le paquet de mongoose
+
 
 const bodyParser = require('body-parser');
 
@@ -52,9 +52,15 @@ app.use(cors()); // explication du cors en haut : https://www.ionos.fr/digitalgu
 
 app.use(bodyParser.json());
 
+app.use(express.urlencoded({extended: true}));
+
 // Importation des chemins/ routes
 
 const postsRoute = require('./routes/posts');
+
+//const tutorialRoute = require('./routes/tutorials'); ou
+require("./routes/tutorials.js")(app); 
+
 
 
 //const { Console } = require('console');
@@ -63,22 +69,18 @@ const postsRoute = require('./routes/posts');
 //Middlewares
 
 app.use('/posts', postsRoute);   // j'utilise le chemin /.... pour faire :
+//app.use('/tutorial',tutorialRoute)
 
 
 
 // ROUTES / Chemin
 app.get('/', (req, res) => {
-    res.send('Bienvenue sur API DOMeNIC')
+    res.send('Bienvenue sur API GeoCHAT')
 });
 
 
 
 
-// Connexion a la base de donnee
-
-mongoose.connect( /* current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.*/
-    console.log('connecter a la base de donnees !')
-);
 
 
 // Comment commencer à écouter le serveur
