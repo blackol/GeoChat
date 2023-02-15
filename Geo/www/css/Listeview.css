@@ -3,7 +3,7 @@ body {
   padding: 0%;
 }
 
-#connexionbody {
+#Listviewbody {
   background: radial-gradient(
     circle,
     rgba(231, 154, 68, 1) 7%,
@@ -32,19 +32,13 @@ body {
   align-items: center;
 }
 
-#pseudo::placeholder {
-  color: white;
-}
-
-#mdps::placeholder {
-  color: white;
-}
 #card {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 70%;
   height: 90%;
+  margin: 2px;
   background: rgba(255, 255, 255, 0.42);
 
   border-radius: 16px;
@@ -54,27 +48,14 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.btn {
-  width: 28vh;
-  height: 50px;
-  border-radius: 15px;
-  background-color: rgb(30, 73, 167);
-  color: white;
-  font-size: large;
-}
-
-.center-element {
+.matchview {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
 }
 
-.btnacceuil {
-  width: 24vh;
-  height: 6.8vh;
-  border-radius: 15px;
-  background-color: blue;
-  color: white;
-  font-size: xx-large;
+#listcontenaire {
+  display:flex
+}
+
+#menufooter{
+  display: flex;
 }
