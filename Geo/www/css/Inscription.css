@@ -1,88 +1,70 @@
 body {
-    margin: 0%;
-    padding: 0%;
-  }
-  
-  #inscriptionbody {
-    background: radial-gradient(
-      circle,
-      rgba(207, 149, 82, 0.922) 7%,
-      rgb(237, 178, 119) 67%
-    );
-    width: 100%;
-    height: 100vh;
-    padding: 0vh;
-    margin: 0vh;
-  
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #Logo {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #Zoneactive {
-    display: flex;
-    flex: 4;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #pseudo::placeholder {
-    color: white;
-  }
-  
-  #mdps::placeholder {
-    color: white;
-  }
-  #card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 70%;
-    height: 90%;
-    background: rgba(255, 255, 255, 0.42);
-  
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-  }
-  
-  .btn {
-    width: 28vh;
-    height: 50px;
-    border-radius: 15px;
-    background-color: rgb(30, 73, 167);
-    color: white;
-    font-size: large;
-  }
-  
-  .center-element {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .btnvalider {
-    width: 20vh;
-    height: 4.8vh;
-    border-radius: 15px;
-    background-color: blue;
-    color: white;
-    font-size: xx-large;
-  }
-  
-  #messageinscrit {
-    font-size: large;
-    color: black;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 0px;
-  }
-  
+  margin: 0%;
+  padding: 0%;
+}
+
+#inscriptionbody {
+  background: radial-gradient(
+    circle,
+    rgba(207, 149, 82, 0.922) 7%,
+    rgb(237, 178, 119) 67%
+  );
+  width: 100%;
+  height: 100vh;
+  padding: 0vh;
+  margin: 0vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#topbody {
+  flex: 1;
+  flex-direction: row;
+  display: flex;
+}
+#topbody1 {
+  flex: 2;
+}
+#topbody2 {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.photobutton {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+  background-color: rgb(17, 5, 97);
+  color:white;
+  text-align: center;
+}
+#centerbody {
+  flex: 5;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+#card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: 90%;
+  margin: 2px;
+  background: rgba(255, 255, 255, 0.42);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.radiobutton{
+  display: flex;
+  flex-direction: row;
+}
+
