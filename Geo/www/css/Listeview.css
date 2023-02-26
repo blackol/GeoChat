@@ -50,18 +50,22 @@ flex: 1;
 
 .matchview {
   display: flex;
+  background-color: blue;
+  width: 80%;
+  height: 40px;
 }
 
 #listcontenaire {
   display:flex;
   flex: 6;
+  justify-content: center;
+  justify-items: center;
 }
 
 
 #menubarre {
   display: flex;
   flex: 1;
-   
   position: fixed;
   top: 89%;
   opacity: 1;

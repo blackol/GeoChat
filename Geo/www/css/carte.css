@@ -44,7 +44,7 @@ body {
 }
 #bodymodeaffichage {
   width: 40px;
-  margin-bottom: 2px;
+  padding: 0%;
 }
 
 #contentcarte {
