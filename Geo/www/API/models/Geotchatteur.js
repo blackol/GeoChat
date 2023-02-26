@@ -66,7 +66,7 @@ Geotchatteur.getAll = (nom, result) => {
     });
 };
 
-Geotchatteur.getAllPublished = result => { // Tout les user masculin
+Geotchatteur.getAllMasculin = result => { // Tout les user masculin
     sql.query("SELECT * FROM geotchatteurs WHERE sexe=M", (err, res) => {
         if (err) {
             console.log("error: ", err);
@@ -79,10 +79,23 @@ Geotchatteur.getAllPublished = result => { // Tout les user masculin
     });
 };
 
-Geotchatteur.updateById = (id, Geotchatteur, result) => {
+Geotchatteur.getAllFeminin = result => { // Tout les user feminin
+    sql.query("SELECT * FROM geotchatteurs WHERE sexe=F", (err, res) => {
+        if (err) {
+            console.log("error: ", err);
+            result(null, err);
+            return;
+        }
+
+        console.log("Geotchatteurs: ", res);
+        result(null, res);
+    });
+};
+
+Geotchatteur.updateById = (id, geotchatteur, result) => {
     sql.query(
         "UPDATE geotchatteurs SET nom = ?, prenom = ?, sexe = ? WHERE id = ?",
-        [Geotchatteur.nom, Geotchatteur.prenom, Geotchatteur.sexe, id],
+        [geotchatteur.nom, geotchatteur.prenom, geotchatteur.sexe, id],
         (err, res) => {
             if (err) {
                 console.log("error: ", err);
@@ -96,8 +109,8 @@ Geotchatteur.updateById = (id, Geotchatteur, result) => {
                 return;
             }
 
-            console.log("updated geotchatteur: ", { id: id, ...Geotchatteur });
-            result(null, { id: id, ...Geotchatteur });
+            console.log("updated geotchatteur: ", { id: id, ...geotchatteur });
+            result(null, { id: id, ...geotchatteur });
         }
     );
 };

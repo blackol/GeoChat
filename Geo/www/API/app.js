@@ -59,7 +59,12 @@ app.use(express.urlencoded({extended: true}));
 const postsRoute = require('./routes/posts');
 
 //const tutorialRoute = require('./routes/tutorials'); ou
-require("./routes/tutorials.js")(app); 
+require("./routes/tutorials.js")(app);
+require(".routes/geotchatteurs.js")(app);
+require("./routes/etats.js")(app);
+require(".routes/invitations.js")(app);
+require("./routes/messages.js")(app);
+require(".routes/masques.js")(app);
 
 
 
