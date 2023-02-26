@@ -1,4 +1,4 @@
-const Tutorial = require("../models/tutorial.model.js");
+const Tutorial = require("../models/Tutorial.js");
 
 // Create and Save a new Tutorial
 exports.create = (req, res) => {
