@@ -3,7 +3,9 @@ body {
   padding: 0%;
 }
 
-#Listviewbody {
+#contentbody {
+  display: flex;
+  flex-direction: column;
   background: radial-gradient(
     circle,
     rgba(231, 154, 68, 1) 7%,
@@ -13,55 +15,51 @@ body {
   height: 100vh;
   padding: 0vh;
   margin: 0vh;
-flex: 1;
-  display: flex;
-  flex-direction: column;
 }
-
-#Logo {
+#header {
   display: flex;
   flex: 1;
-  justify-content: center;
+  flex-direction: column;
+}
+#Logo {
+  width: 100px;
+  height: 100px;
   align-items: center;
+  justify-content: center;
+  margin-left: 40%;
+}
+#filtrecontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#bodyfiltre {
+  width: 100px;
+  height: 30px;
+  border: thick double #32a1ce;
+}
+#textfiltre {
+  display: flex;
+  flex-direction: row;
+}
+#bodymodeaffichage {
+  width: 40px;
+  margin-bottom: 2px;
 }
 
-#Zoneactive {
+#contentcarte {
   display: flex;
   flex: 4;
-  justify-content: center;
-  align-items: center;
 }
-
-#card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 70%;
-  height: 90%;
-  margin: 2px;
-  background: rgba(255, 255, 255, 0.42);
-
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.matchview {
-  display: flex;
-}
-
-#listcontenaire {
-  display:flex;
-  flex: 6;
-}
-
 
 #menubarre {
   display: flex;
   flex: 1;
-   
+    background: radial-gradient(
+    circle,
+    rgba(231, 154, 68, 1) 7%,
+    rgba(255, 222, 158, 1) 67%
+  );
   position: fixed;
   top: 89%;
   opacity: 1;
@@ -71,6 +69,14 @@ flex: 1;
   text-align: center;
   flex-direction: row;
   justify-content: space-around;
+}
+.fixed {
+  position: fixed;
+  top: 310px;
+  left: 60px;
+  width: 250px;
+  border: 2px solid blue;
+  text-align: center;
 }
 #logogeo{
     flex: 1;
