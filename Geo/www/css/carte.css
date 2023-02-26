@@ -22,7 +22,11 @@ body {
   flex-direction: column;
 }
 #Logo {
-  width: 30%;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40%;
 }
 #filtrecontainer {
   display: flex;
@@ -39,9 +43,8 @@ body {
   flex-direction: row;
 }
 #bodymodeaffichage {
-  width: 100px;
-  height: 30px;
-  border: thick double #32a1ce;
+  width: 40px;
+  margin-bottom: 2px;
 }
 
 #contentcarte {
@@ -52,20 +55,39 @@ body {
 #menubarre {
   display: flex;
   flex: 1;
-  background-color: brown;
+    background: radial-gradient(
+    circle,
+    rgba(231, 154, 68, 1) 7%,
+    rgba(255, 222, 158, 1) 67%
+  );
   position: fixed;
-  top: 88%;
-  opacity: 0.7;
+  top: 89%;
+  opacity: 1;
   width: 100%;
   height: 95px;
   border-radius: 15% 15% 5% 5%;
   text-align: center;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .fixed {
   position: fixed;
-  top: 300px;
+  top: 310px;
   left: 60px;
   width: 250px;
   border: 2px solid blue;
   text-align: center;
+}
+#logogeo{
+    flex: 1;
+}
+#logodisct{
+    flex: 1;
+}
+#logousers{
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    border: thick double black;
+
 }
