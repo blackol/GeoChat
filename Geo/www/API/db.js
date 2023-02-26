@@ -1,5 +1,5 @@
 const mysql = require("mysql");
-const dbConfig = require("../config/db.config.js");
+const dbConfig = require("./config/db.config");
 
 // Creation de la connexion avec labd
 const connection = mysql.createConnection({

@@ -1,4 +1,4 @@
-const sql = require("./db.js");
+const sql = require("../db.js");
 
 // constructor
 const Message = function (message) {
@@ -7,8 +7,6 @@ const Message = function (message) {
     this.message = message.message;
     this.idenvoyeur = message.idenvoyeur;
     this.idrecepteur = message.idrecepteur;
-
-
 };
 
 Message.create = (newMessage, result) => {

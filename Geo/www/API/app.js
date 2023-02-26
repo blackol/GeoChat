@@ -32,39 +32,30 @@ https://developer.mozilla.org/fr/docs/Web/API/Fetch_API/Using_Fetch
 /*----------------------------------------------------------------------------------------------------------*/
 
 const express = require('express'); //importer le paquet d'express
-
+const cors = require('cors');
 const app = express();
 
 //-------------
-var https = require('https');
-var http = require('http');
+//var https = require('https');
+//var http = require('http');
 //---------
 
 
-const bodyParser = require('body-parser');
+//const bodyParser = require('body-parser');
 
-const cors = require('cors');
+
 
 //require('dotenv/config');
 
 //Middlewares app
 app.use(cors()); // explication du cors en haut : https://www.ionos.fr/digitalguide/sites-internet/developpement-web/cross-origin-resource-sharing/
 
-app.use(bodyParser.json());
+//app.use(bodyParser.json());
+
+app.use(express.json());
 
 app.use(express.urlencoded({extended: true}));
 
-// Importation des chemins/ routes
-
-const postsRoute = require('./routes/posts');
-
-//const tutorialRoute = require('./routes/tutorials'); ou
-require("./routes/tutorials.js")(app);
-require(".routes/geotchatteurs.js")(app);
-require("./routes/etats.js")(app);
-require(".routes/invitations.js")(app);
-require("./routes/messages.js")(app);
-require(".routes/masques.js")(app);
 
 
 
@@ -73,18 +64,29 @@ require(".routes/masques.js")(app);
 
 //Middlewares
 
-app.use('/posts', postsRoute);   // j'utilise le chemin /.... pour faire :
+//app.use('/posts', postsRoute);   // j'utilise le chemin /.... pour faire :
 //app.use('/tutorial',tutorialRoute)
 
 
 
 // ROUTES / Chemin
 app.get('/', (req, res) => {
-    res.send('Bienvenue sur API GeoCHAT')
+    res.send({message: 'Bienvenue sur API GeoCHAT'})
 });
 
 
 
+// Importation des chemins/ routes
+
+//const postsRoute = require('./routes/posts');
+
+//const tutorialRoute = require('./routes/tutorials'); ou
+require("./routes/tutorials")(app);
+require("./routes/geotchatteurs.js")(app);
+require("./routes/etats.js")(app);
+require("./routes/invitations.js")(app);
+require("./routes/messages.js")(app);
+require("./routes/masques.js")(app);
 
 
 
