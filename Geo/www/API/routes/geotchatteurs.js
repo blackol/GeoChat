@@ -10,7 +10,11 @@ module.exports = app => {
     router.get("/", geotchatteurs.findAll);
 
     // Retrieve all published geotchatteurs
-    router.get("/published", geotchatteurs.findAllPublished);
+    router.get("/homme", geotchatteurs.findAllMasculin);
+
+
+    // Retrieve all published geotchatteurs
+    router.get("/femme", geotchatteurs.findAllFeminin);
 
     // Retrieve a single Geotchatteur with id
     router.get("/:id", geotchatteurs.findOne);
