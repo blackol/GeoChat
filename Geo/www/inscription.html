@@ -19,27 +19,29 @@
           />
         </div>
         <div id="topbody2">
-          <button class="photobutton">Photo</button>
+          <button id="pic" class="photobutton">Photo</button>
+          <input type="hidden" name="photo" />
         </div>
       </div>
       <div id="centerbody">
         <div id="card">
           <div id="titlecard">Inscription</div>
-          <input placeholder="NOM" />
-          <input placeholder="PRENOM" />
-          <input placeholder="PSEUDO" />
-          <input placeholder="Date de naissance" />
+          <input name="name" placeholder="NOM" required />
+          <input name="firstname" placeholder="PRENOM" required />
+          <input name="pseudo" placeholder="PSEUDO" required />
+          <label for="birth">Date de naissance</label>
+          <input type="date" id="birth" name="birth" placeholder="Date de naissance" required />
           <div class="radiobutton">
-            <input type="radio" id="Homme" placeholder="homme" value="Homme" />
+            <input type="radio" id="Homme" name="sexe" placeholder="homme" value="M" />
             <label for="Homme">Homme</label>
           </div>
           <div class="radiobutton">
-            <input type="radio" id="Femme" placeholder="homme" value="Femme" />
+            <input type="radio" id="Femme" name="sexe" placeholder="homme" value="F" />
             <label for="Femme">Femme</label>
           </div>
-          <input placeholder="Email" />
-          <input placeholder="Mot de passe" />
-          <button> Suivant</button>
+          <input type="email" name="mail" placeholder="Email" required />
+          <input type="password" name="mdp" placeholder="Mot de passe" required />
+          <button onclick="submit()"> Suivant</button>
           
         </div>
       </div>
@@ -110,6 +112,7 @@
   </div>
 -->
   </body>
+  <script src="js/inscription.js"></script>
 </html>
 
 <!-- <button onclick='valide()' type="button" class="btn btn-success" id="btnvalide">Suivant</button> <br> -->
