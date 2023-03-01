@@ -8,5 +8,11 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
 
 var popup = L.popup()
   .setLatLng([51.513, -0.09])
-  .setContent("<b>Hello world!</b><br>I am a popup.")
+  .setContent("<b>Hello world!</b><br>I am a popup. <Button>voir profil</Button>")
   .openOn(map);
+
+function onMapClick() {
+  alert("slatt");
+}
+
+popup.on("click", onMapClick);

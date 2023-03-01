@@ -100,3 +100,8 @@ body {
   height: 80px;
   border: thick double black;
 }
+.photouserbarre{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
