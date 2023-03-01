@@ -36,7 +36,6 @@ body {
 #bodyfiltre {
   width: 100px;
   height: 30px;
-  border: thick double #32a1ce;
 }
 #textfiltre {
   display: flex;
