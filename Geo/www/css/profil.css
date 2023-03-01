@@ -3,7 +3,7 @@ body {
   padding: 0%;
 }
 
-#inscriptionbody {
+#profilbody {
   background: radial-gradient(
     circle,
     rgba(207, 149, 82, 0.922) 7%,
@@ -33,15 +33,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.photobutton {
-  display: flex;
-  width: 100px;
-  height: 100px;
-  border-radius: 10%;
-  background-color: rgb(17, 5, 97);
-  color:white;
-  text-align: center;
-}
+
 #centerbody {
   flex: 5;
   justify-content: center;
@@ -64,8 +56,5 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.radiobutton{
-  display: flex;
-  flex-direction: row;
-}
+
 
