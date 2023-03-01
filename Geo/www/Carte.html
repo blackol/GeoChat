@@ -3,7 +3,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
     <link rel="stylesheet" href="css/carte.css" />
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
     <title>Carte</title>
   </head>
   <body>
@@ -15,35 +26,44 @@
             alt="logo"
             width="100px"
             height="100px"
-            
           />
         </div>
         <div id="filtrecontainer">
           <div id="bodyfiltre">
             <div id="textfiltre">
-              Filtre
-              <div id="logodeoulant">m</div>
+              <select name="pets" id="filtre-select">
+                <option value="">Filtre</option>
+                <option value="dog">5km</option>
+                <option value="cat">10km</option>
+                <option value="hamster">homme</option>
+                <option value="parrot">femme</option>
+              </select>
             </div>
           </div>
-          <button id="bodymodeaffichage"> <img src="../www/img/liste.svg" width="100%" alt=""></button>
+          <a id="bodymodeaffichage" href="../www/Listeview.html">
+            <img src="../www/img/liste.svg" width="100%" alt="" />
+          </a>
         </div>
       </div>
       <div id="contentcarte">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3830.9138422075494!2d-61.53398618505697!3d16.22486848878498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c1345e94665630f%3A0x7ba4ff736120a5fc!2sFouillole%2C%20Pointe-%C3%A0-Pitre%2097110%2C%20Guadeloupe!5e0!3m2!1sfr!2sfr!4v1677377639125!5m2!1sfr!2sfr"
-          width="100%"
-          height="600"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        <div id="map"></div>
+
         <div id="menubarre">
-            <div id="logogeo"><img src="../www/img/loca.svg" alt="" width="100%" height="90%"></div>
-            <div id="logodisct"><img src="../www/img/discussion.svg" alt="" width="100%" height="90%"></div>
-            <div id="logousers"></div>
+          <div id="logogeo">
+            <img src="../www/img/loca.svg" alt="" width="100%" height="90%" />
+          </div>
+          <div id="logodisct">
+            <img
+              src="../www/img/discussion.svg"
+              alt=""
+              width="100%"
+              height="90%"
+            />
+          </div>
+          <div id="logousers"></div>
         </div>
       </div>
     </div>
+    <script src="../www/js/carte.js"></script>
   </body>
 </html>
