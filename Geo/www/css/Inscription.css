@@ -18,6 +18,10 @@ body {
   flex-direction: column;
 }
 
+#titlecard {
+  font-family: "Brush Script MT", Times, cursive;
+}
+
 #topbody {
   flex: 1;
   flex-direction: row;
