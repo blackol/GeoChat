@@ -69,3 +69,11 @@ body {
   flex-direction: row;
 }
 
+.btnvalide {
+  width: 24vh;
+  height: 6.8vh;
+  border-radius: 15px;
+  background-color: rgb(17, 5, 97);
+  color: white;
+  font-size: xx-large;
+}
