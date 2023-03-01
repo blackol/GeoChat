@@ -44,7 +44,7 @@ function submit() {
         response.json().then(function(data) {
             console.log(data);
             if(data.id) {
-                alert("Inscription réussie");
+                window.location.assign("Description.html");
             }
             else {
                 alert("Une erreur est survenue lors de votre inscription.\nVérifiez que tous les champs sont bien remplis");
