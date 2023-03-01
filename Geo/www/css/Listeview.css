@@ -79,8 +79,8 @@ body {
   justify-content: space-around;
   background: radial-gradient(
     circle,
-    rgba(231, 154, 68, 1) 7%,
-    rgba(255, 222, 158, 1) 67%
+    rgba(207, 149, 82, 0.922) 7%,
+    rgb(237, 178, 119) 67%
   );
 }
 #logogeo {
