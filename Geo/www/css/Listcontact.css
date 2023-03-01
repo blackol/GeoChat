@@ -1,0 +1,114 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  background: radial-gradient(
+    circle,
+    rgba(231, 154, 68, 1) 7%,
+    rgba(255, 222, 158, 1) 67%
+  );
+}
+
+#Listviewbody {
+  width: 100%;
+  height: 100vh;
+  padding: 0vh;
+  margin: 0vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#Logo {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+#Zoneactive {
+  display: flex;
+  flex: 4;
+  justify-content: center;
+  align-items: center;
+}
+
+#card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70%;
+  height: 90%;
+  margin: 2px;
+  background: rgba(255, 255, 255, 0.42);
+
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.matchview {
+  background-color: rgb(166, 120, 40);
+  height: 70px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+}
+
+#listcontenaire {
+  display: flex;
+  flex: 6;
+  flex-direction: column;
+  overflow: scroll;
+  margin-bottom: 90px;
+}
+
+#menubarre {
+  display: flex;
+  flex: 1;
+  position: fixed;
+  top: 89%;
+  opacity: 1;
+  width: 100%;
+  height: 95px;
+  border-radius: 15% 15% 5% 5%;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-around;
+  background: radial-gradient(
+    circle,
+    rgba(231, 154, 68, 1) 7%,
+    rgba(255, 222, 158, 1) 67%
+  );
+}
+#logogeo {
+  flex: 1;
+}
+#logodisct {
+  flex: 1;
+}
+#logousers {
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  border: thick double black;
+}
+
+.photogeotahteur {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
+.TexteName {
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 100;
+  font-size: 40px;
+}
+.photouserbarre{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
