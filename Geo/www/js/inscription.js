@@ -15,6 +15,16 @@ function onSuccess(imageData) {
     document.querySelector('input[name="photo"]').setAttribute('value', image);
 }
 
+function getBase64Image(img) {
+    var canvas = document.createElement("canvas");
+    canvas.width = img.width;
+    canvas.height = img.height;
+    var ctx = canvas.getContext("2d");
+    ctx.drawImage(img, 0, 0);
+    var dataURL = canvas.toDataURL("image/png");
+    return dataURL.replace(/^data:image\/?[A-z]*;base64,/);
+}
+
 function submit() {
     var url = "http://212.227.202.166:8080/api/geotchatteurs/pseudo/"+document.querySelector("input[name='pseudo']").value;
 
@@ -35,6 +45,18 @@ function submit() {
                 formData.append("mail", document.querySelector("input[name='mail']").value);
                 formData.append("mdp", document.querySelector("input[name='mdp']").value);
                 formData.append("dateNaissance", document.querySelector("input[name='birth']").value);
+
+                if(document.querySelector('input[name="photo"]').value == ""){
+                    if(document.querySelector("input[name='sexe']").value == "M"){
+                        var img64 = getBase64Image("homme.png");
+                        
+                    }
+                    else {
+                        var img64 = getBase64Image("femme.png");
+                    }
+                    document.querySelector('input[name="photo"]').setAttribute("value", img64);
+                }
+                
                 formData.append("photo", document.querySelector('input[name="photo"]').value);
 
                 const data = Object.fromEntries(formData);
