@@ -74,9 +74,9 @@ body {
   width: 20vh;
   height: 4.8vh;
   border-radius: 15px;
-  background-color: blue;
+  background-color:  rgb(30, 73, 167);
   color: white;
-  font-size: xx-large;
+  font-size: x-large;
 }
 
 #messageinscrit {
