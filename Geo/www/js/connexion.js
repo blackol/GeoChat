@@ -12,8 +12,14 @@ function connect() {
     .then(function(response)
     {
         response.json().then(function(data) {
-            console.log(data);
+            console.log(data[0]);
             if (data[0]){
+                localStorage.setItem('nom',data[0].nom);
+                localStorage.setItem('prenom',data[0].prenom);
+                localStorage.setItem('pseudo',data[0].pseudo);
+                localStorage.setItem('birth',data[0].dateNaissance);
+                localStorage.setItem('photo',data[0].photo);
+                localStorage.setItem('mail',data[0].mail);
                 window.location.assign("Carte.html");
             }
             else {
