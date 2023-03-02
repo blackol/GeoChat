@@ -5,7 +5,18 @@
     <author email="anthonycolvil@gmail.com" href="https://cordova.apache.org">
         Le triangle des Bermudes
     </author>
-    <content src="index.html" />
+    <content src="connexion.html" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
+    <allow-intent href="*://geotchat.blackol-ca.com:8080/*"/>
+    <allow-navigation href="*"/>
+    <platform name="android">
+        <preference name = "android:debuggable" value="true" />
+        <preference name = "AndroidInsecureFileModeEnabled" value = "true" />
+        <preference name="AllowUntrustedCerts"  value="true" />
+        <preference name="InterceptRemoteRequests" value="all" />
+        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application"  xmlns:android="http://schemas.android.com/apk/res/android">
+            <application android:usesCleartextTraffic="true" />
+        </edit-config>
+    </platform>
 </widget>
