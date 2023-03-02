@@ -1,0 +1,27 @@
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+#tchatbodyview {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#header {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+#img {
+  width: 150px;
+  height: 180px;
+  margin-left: 35%;  
+}
+
+#bodychat {
+  flex: 4;
+}
+
