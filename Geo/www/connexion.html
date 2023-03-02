@@ -3,25 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:; connect-src *"-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/connexion.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <title>Connexion</title>
   </head>
   <body>
     <div id="connexionbody">
       <div id="Logo">
-        <img src="../www/img/logo.png" alt="logo" width="240px" />
+        <img src="img/logo.png" alt="logo" width="240px" />
       </div>
 
       <div id="Zoneactive">
         <div id="card">
           <div class="center-element">
-            <img src="../www/img/logogroup.svg" sizes="70px" />
+            <img src="img/logogroup.svg" sizes="70px" />
           </div>
 
           <div class="center-element">
@@ -33,7 +34,7 @@
           </div>
 
           <div class="center-element">
-            <button class="btnvalider" onclick="connect()">Valider</button>
+            <button class="btnvalider" onclick="connect()" id="btn">Valider</button>
 
             <button id="messageinscrit">
               <a href="inscription.html">Vous n'êtes pas encore inscrit ?</a>
@@ -42,6 +43,7 @@
         </div>
       </div>
     </div>
+    <script src="js/connexion.js"></script>
+    <script src="cordova.js"></script>
   </body>
-  <script src="js/connexion.js"></script>
 </html>

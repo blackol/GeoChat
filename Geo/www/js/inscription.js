@@ -26,7 +26,7 @@ function getBase64Image(img) {
 }
 
 function submit() {
-    var url = "http://212.227.202.166:8080/api/geotchatteurs/pseudo/"+document.querySelector("input[name='pseudo']").value;
+    var url = "http://geotchat.blackol-ca.com:8080/api/geotchatteurs/pseudo/"+document.querySelector("input[name='pseudo']").value;
 
     fetch(url)
     .then(function(response)
@@ -36,7 +36,7 @@ function submit() {
                 alert('Pseudo déjà utilisé');
             }
             else {
-                var url = "http://212.227.202.166:8080/api/geotchatteurs";
+                var url = "http://geotchat.blackol-ca.com:8080/api/geotchatteurs";
                 const formData  = new FormData();
                 formData.append("nom", document.querySelector("input[name='name']").value);
                 formData.append("prenom", document.querySelector("input[name='firstname']").value);
