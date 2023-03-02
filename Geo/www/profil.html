@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/profil.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <title>Profil</title>
   </head>
   <body>
@@ -18,10 +19,11 @@
             height="300px"
           />
           <a href="Carte.html" ><button class="btn btn-success">Retour</button></a> 
-          <button class="btn btn-success">Modifier</button>
+          <button class="btn btn-success" onclick="edit()">Modifier</button>
         </div>
         <div id="topbody2">
-          Photo
+          <img src="" id="pp" alt="Photo de Profil"><br>
+          <input type="hidden" name="bloup">
         </div>
       </div>
       <div id="centerbody">
@@ -35,8 +37,6 @@
         </div>
       </div>
     </div>
-
-   <button onclick="">Modifier</button>
   </body>
   <script src="js/profil.js"></script>
 </html>
