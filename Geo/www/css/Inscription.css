@@ -6,7 +6,7 @@ body {
 #inscriptionbody {
   background: radial-gradient(
     circle,
-    rgba(207, 149, 82, 0.922) 7%,
+    #cf9552eb 7%,
     rgb(237, 178, 119) 67%
   );
   width: 100%;
@@ -21,7 +21,7 @@ body {
 #titlecard {
   font-family: "Brush Script MT", Times, cursive;
   font-size: 220%;
-  color: rgb(11, 88, 231);
+  color: rgb(1, 59, 167);
 }
 
 #topbody {
@@ -38,16 +38,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  width : 30px ;
+  height : 30px;
+  margin-top: 150px;
 }
+
 .photobutton {
-  display: flex;
-  width: 100px;
-  height: 100px;
-  border-radius: 10%;
-  background-color: rgb(11, 88, 231);
-  color:white;
-  text-align: center;
+  width: 18vh;
+  height: 4vh;
+  border-radius: 15px;
+  background-color: rgb(1, 59, 167);
+  color: white;
+  font-size: large;
 }
+
 #centerbody {
   flex: 5;
   justify-content: center;
@@ -76,10 +80,11 @@ body {
 }
 
 .btnvalide {
-  width: 24vh;
-  height: 6.8vh;
+  width: 18vh;
+  height: 4vh;
   border-radius: 15px;
-  background-color: rgb(11, 88, 231);
+  background-color: rgb(1, 59, 167);
   color: white;
-  font-size: xx-large;
+  font-size: large;
 }
+

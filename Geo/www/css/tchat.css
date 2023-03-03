@@ -18,10 +18,83 @@ body {
 #img {
   width: 150px;
   height: 180px;
-  margin-left: 35%;  
+  margin-left: 35%;
 }
 
 #bodychat {
+  display: flex;
   flex: 4;
+ justify-content: end;
+ flex-direction: column;
+ padding-bottom: 20%;
 }
 
+#menubarre {
+  display: flex;
+  flex: 1;
+  position: fixed;
+  top: 89%;
+  opacity: 1;
+  width: 100%;
+  height: 95px;
+  border-radius: 15% 15% 5% 5%;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-around;
+  background: radial-gradient(
+    circle,
+    rgba(231, 154, 68, 1) 7%,
+    rgba(255, 222, 158, 1) 67%
+  );
+}
+
+#logogeo {
+  flex: 1;
+}
+#logodisct {
+  flex: 1;
+}
+#logousers {
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  border: thick double black;
+}
+
+.photogeotahteur {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
+.TexteName {
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 100;
+  font-size: 40px;
+}
+.photouserbarre {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+#moi {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+#correspondant {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+span{
+  width: 140px;
+  height: 50px; 
+  background: radial-gradient(
+    circle,
+    rgba(231, 154, 68, 1) 7%,
+    rgb(176, 255, 158) 67%
+  );
+  border-radius: 5px;
+}

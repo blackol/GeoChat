@@ -15,25 +15,48 @@
           <img
             src="../www/img/logo.png"
             alt="logo"
-            width="350px"
-            height="300px"
+            width="140px"
+            height="90px"
           />
-          <a href="Carte.html" ><button class="btn btn-success">Retour</button></a> 
-          <button class="btn btn-success" onclick="edit()">Modifier</button>
+         
         </div>
-        <div id="topbody2">
+        <div id="topbody2" width="100px" height="90px">
           <img src="" id="pp" alt="Photo de Profil"><br>
           <input type="hidden" name="bloup">
         </div>
       </div>
-      <div id="centerbody">
+      <div id="centerbody" style="text-align:center">
         <div id="card">
-         Nom : <span id="nom"></span><br>
-         Prenom : <span id="prenom"></span><br>
-         Pseudo : <span id="pseudo"></span><br>
-         Âge : <span id="age"></span><br>
-         Email : <span id="mail"></span><br>
-          
+          <div id="titlecard">Mon profil</div>
+          <div class="box">
+            <h2>Nom :</h2>
+            <p><span id="nom"></span></p>
+          </div>
+        <br>
+          <div class="box">
+            <h2>Prenom :</h2>
+            <p><span id="prenom"></span></p>
+          </div>
+        <br>
+          <div class="box">
+            <h2>Pseudo : </h2>
+            <p><span id="pseudo"></span></p>
+          </div>
+        <br>
+          <div class="box">
+            <h2>Âge : </h2>
+            <p><span id="age"></span></p>
+          </div>
+        <br>
+          <div class="box">
+            <h2>Email : </h2>
+            <p><span id="mail"></span></p>
+          </div>
+        <br>
+        <div class="bouton-aligne" style="text-align:center">
+         <button class="btnmodif" onclick="edit()">Modifier</button>
+         <a href="Carte.html" ><button class="btnretour">Retour</button></a> 
+        </div>
         </div>
       </div>
     </div>

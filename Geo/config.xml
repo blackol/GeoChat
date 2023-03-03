@@ -6,6 +6,7 @@
         Le triangle des Bermudes
     </author>
     <content src="connexion.html" />
+    <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="*://geotchat.blackol-ca.com:8080/*"/>

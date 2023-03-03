@@ -6,8 +6,8 @@ body {
 #profilbody {
   background: radial-gradient(
     circle,
-    rgba(207, 149, 82, 0.922) 7%,
-    rgb(237, 178, 119) 67%
+    #cf9552eb 7%,
+    #edb277 67%
   );
   width: 100%;
   height: 100vh;
@@ -56,5 +56,35 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.btnmodif {
+  width: 18vh;
+  height: 4vh;
+  border-radius: 15px;
+  background-color: rgb(1, 59, 167);
+  color: white;
+  font-size: large;
+}
 
+.btnretour {
+  width: 18vh;
+  height: 4vh;
+  border-radius: 15px;
+  background-color: rgb(1, 59, 167);
+  color: white;
+  font-size: large;
+}
 
+.box {
+  border: 5px solid #cf9552eb;
+  background-color:#edb277;
+  border-radius: 1em;
+  border-top-right-radius: 5% 15%;
+  width: 22vh;
+  font-size: xx-small;
+}
+
+#titlecard {
+  font-family: "Brush Script MT", Times, cursive;
+  font-size: 220%;
+  color: rgb(1, 59, 167);
+}
