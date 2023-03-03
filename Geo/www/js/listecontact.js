@@ -69,3 +69,8 @@ function loadInvit() {
 }
 
 loadInvit();
+
+
+function gotachat() {
+  window.location.assign("tchat.html");
+}
