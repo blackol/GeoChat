@@ -5,7 +5,7 @@
     <author email="anthonycolvil@gmail.com" href="https://cordova.apache.org">
         Le triangle des Bermudes
     </author>
-    <content src="connexion.html" />
+    <content src="pageaccueil.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />

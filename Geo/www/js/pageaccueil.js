@@ -7,9 +7,9 @@ function onDeviceReady() {
 }
 
 function connect() {
-    window.location.assign("../connexion.html");
+    window.location.assign("connexion.html");
 }
 
 function register() {
-    window.location.assign("../inscription.html");
+    window.location.assign("inscription.html");
 }
