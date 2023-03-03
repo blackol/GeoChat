@@ -14,7 +14,7 @@ function loadInvit() {
     {
         response.json().then(function(data){
             data.forEach(element => {
-
+                
                 var url2 = "http://geotchat.blackol-ca.com:8080/api/geotchatteurs/"+element.idinviteur;
                 fetch(url2, {
                     method: "GET"
