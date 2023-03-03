@@ -38,19 +38,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width : 10px ;
-  height : 10px;
-  margin-top: 80px;
+  width : 30px ;
+  height : 30px;
+  margin-top: 150px;
 }
+
 .photobutton {
-  display: flex;
-  width: 100px;
-  height: 100px;
-  border-radius: 10%;
+  width: 18vh;
+  height: 4vh;
+  border-radius: 15px;
   background-color: rgb(1, 59, 167);
-  color:white;
-  text-align: center;
+  color: white;
+  font-size: large;
 }
+
 #centerbody {
   flex: 5;
   justify-content: center;
