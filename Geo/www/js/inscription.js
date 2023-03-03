@@ -15,16 +15,6 @@ function onSuccess(imageData) {
     document.querySelector('input[name="photo"]').setAttribute('value', image);
 }
 
-function getBase64Image(img) {
-    var canvas = document.createElement("canvas");
-    canvas.width = img.width;
-    canvas.height = img.height;
-    var ctx = canvas.getContext("2d");
-    ctx.drawImage(img, 0, 0);
-    var dataURL = canvas.toDataURL("image/png");
-    return dataURL.replace(/^data:image\/?[A-z]*;base64,/);
-}
-
 function submit() {
     var url = "http://geotchat.blackol-ca.com:8080/api/geotchatteurs/pseudo/"+document.querySelector("input[name='pseudo']").value;
 
@@ -48,13 +38,13 @@ function submit() {
 
                 if(document.querySelector('input[name="photo"]').value == ""){
                     if(document.querySelector("input[name='sexe']").value == "M"){
-                        var img64 = getBase64Image("homme.png");
+                        var img = "../homme.png";
                         
                     }
                     else {
-                        var img64 = getBase64Image("femme.png");
+                        var img = "../femme.png";
                     }
-                    document.querySelector('input[name="photo"]').setAttribute("value", img64);
+                    document.querySelector('input[name="photo"]').setAttribute("value", img);
                 }
                 
                 formData.append("photo", document.querySelector('input[name="photo"]').value);
