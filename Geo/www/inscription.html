@@ -29,24 +29,45 @@
       <div id="centerbody">
         <div id="card">
           <div id="titlecard">Inscription</div>
-         
-          <input name="name" placeholder="NOM" required />
+
+          <div class="center-element">
+            <input name="name" class="btn" placeholder="NOM" required />
+          </div>
+          
+          <div class="center-element">
+            <input name="firstname" class="btn" placeholder="PRENOM" required />
+          </div>
+          
+          <div class="center-element">
+            <input name="pseudo" class="btn" placeholder="PSEUDO" required />
+          </div>
+          
+          <div class="center-element">
+            <label for="birth">Date de naissance</label>
+          <input type="date" class="btn" id="birth" name="birth" placeholder="Date de naissance" required />
+          </div>
           
           
-          <input name="firstname" placeholder="PRENOM" required />
-          <input name="pseudo" placeholder="PSEUDO" required />
-          <label for="birth">Date de naissance</label>
-          <input type="date" id="birth" name="birth" placeholder="Date de naissance" required />
           <div class="radiobutton">
             <input type="radio" id="Homme" name="sexe" placeholder="homme" value="M" />
             <label for="Homme">Homme</label>
           </div>
+
+          
           <div class="radiobutton">
             <input type="radio" id="Femme" name="sexe" placeholder="homme" value="F" />
             <label for="Femme">Femme</label>
           </div>
-          <input type="email" name="mail" placeholder="Email" required />
-          <input type="password" name="mdp" placeholder="Mot de passe" required />
+
+          <div class="center-element">
+            <input type="email" class="btn" name="mail" placeholder="Email" required />
+          </div>
+
+          <div class="center-element">
+            <input type="password" class="btn" name="mdp" placeholder="Mot de passe" required />
+          </div>
+          
+          
           <button class="btnvalide" onclick="submit()"> Valider </button>
           
         </div>
