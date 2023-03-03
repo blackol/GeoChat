@@ -6,7 +6,7 @@ body {
 #inscriptionbody {
   background: radial-gradient(
     circle,
-    rgba(207, 149, 82, 0.922) 7%,
+    #cf9552eb 7%,
     rgb(237, 178, 119) 67%
   );
   width: 100%;
