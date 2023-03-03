@@ -49,12 +49,14 @@ body {
 }
 
 .matchview {
-  background-color: #aa763beb;
-  height: 70px;
-  margin: 10px;
-  display: flex;
-  flex-direction: row;
-  border-radius: 5px;
+  border: 5px solid #704717eb;
+  background-color:#b07539;
+  border-radius: 1em;
+  border-top-right-radius: 5% 15%;
+  width: 40vh;
+  font-size: xx-small;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .matchinvitation {
@@ -107,8 +109,8 @@ body {
 }
 #logousers {
   border-radius: 100%;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border: thick double black;
 }
 
